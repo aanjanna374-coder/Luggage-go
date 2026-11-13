@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LuggageGo - Smart Luggage</title>
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <!-- ================= NAVBAR ================= -->
+
+    <header class="navbar">
+
+        <div class="brand">
+
+            <div class="brand-icon">
+                <i class="fa-solid fa-suitcase-rolling"></i>
+            </div>
+
+            <span>Luggage<span>Go</span></span>
+
+        </div>
+
+        <div class="nav-right">
+
+            <a href="contact.html">
+                <i class="fa-regular fa-circle-question"></i>
+                Help
+            </a>
+
+            <a href="contact.html">
+                <i class="fa-solid fa-headset"></i>
+                Support
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="main">
+
+        <!-- LEFT CONTENT -->
+
+        <section class="visual-section">
+
+            <div class="gradient-orb orb1"></div>
+            <div class="gradient-orb orb2"></div>
+            <div class="gradient-orb orb3"></div>
+
+
+            <div class="hero-text">
+
+                <div class="mini-badge">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    SMART TRAVEL MADE SIMPLE
+                </div>
+
+                <h1>
+                    Your journey.
+                    <br>
+                    <span>Your luggage.</span>
+                    <br>
+                    Our care.
+                </h1>
+
+                <p>
+                    Experience smarter luggage management.
+                    Track your bags, manage deliveries and
+                    travel without the stress.
+                </p>
+
+            </div>
+
+
+            <!-- ================= LUGGAGE ================= -->
+
+            <div class="luggage-area">
+
+                <!-- Floating location card -->
+
+                <div class="float-card location-card">
+
+                    <div class="float-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+
+                    <div>
+                        <small>LIVE LOCATION</small>
+                        <strong>Hyderabad</strong>
+                    </div>
+
+                    <span class="online-dot"></span>
+
+                </div>
+
+
+                <!-- Luggage -->
+
+                <div class="luggage">
+
+                    <div class="handle"></div>
+
+                    <div class="handle-top"></div>
+
+                    <div class="bag">
+
+                        <div class="bag-shine"></div>
+
+                        <div class="bag-logo">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            <span>GO</span>
+                        </div>
+
+                        <div class="bag-line"></div>
+
+                        <div class="bag-lock">
+                            <i class="fa-solid fa-lock"></i>
+                        </div>
+
+                    </div>
+
+                    <div class="wheel wheel1"></div>
+                    <div class="wheel wheel2"></div>
+
+                </div>
+
+
+                <!-- Floating tracking card -->
+
+                <div class="float-card tracking-card">
+
+                    <div class="tracking-top">
+
+                        <span>
+                            <i class="fa-solid fa-location-crosshairs"></i>
+                            TRACKING
+                        </span>
+
+                        <b>LIVE</b>
+
+                    </div>
+
+                    <div class="tracking-line">
+
+                        <div class="track-point active"></div>
+
+                        <div class="line"></div>
+
+                        <div class="track-point"></div>
+
+                    </div>
+
+                    <div class="track-text">
+
+                        <span>
+                            <small>Picked up</small>
+                            <strong>08:45 AM</strong>
+                        </span>
+
+                        <span>
+                            <small>Destination</small>
+                            <strong>12:30 PM</strong>
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Rating -->
+
+                <div class="rating-card">
+
+                    <div class="rating-star">
+                        ★
+                    </div>
+
+                    <div>
+                        <strong>4.9</strong>
+                        <small>Customer rating</small>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- FEATURES -->
+
+            <div class="features">
+
+                <div>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span>Live Tracking</span>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <span>Safe & Secure</span>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-bolt"></i>
+                    <span>Fast Service</span>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= LOGIN ================= -->
+
+        <section class="login-section">
+
+            <div class="login-card">
+
+                <div class="card-top">
+
+                    <div class="welcome-icon">
+                        <i class="fa-solid fa-hand-wave"></i>
+                    </div>
+
+                    <h2>Welcome back!</h2>
+
+                    <p>
+                        Sign in to continue your journey
+                    </p>
+
+                </div>
+
+
+                <!-- ROLE -->
+
+                <div class="field">
+
+                    <label>Continue as</label>
+
+                    <div class="roles">
+
+                        <button class="role active"
+                                onclick="selectRole(this)"
+                                type="button">
+
+                            <i class="fa-solid fa-user"></i>
+
+                            <span>User</span>
+
+                        </button>
+
+                        <button class="role"
+                                onclick="selectRole(this)"
+                                type="button">
+
+                            <i class="fa-solid fa-user-tie"></i>
+
+                            <span>Staff</span>
+
+                        </button>
+
+                        <button class="role"
+                                onclick="selectRole(this)"
+                                type="button">
+
+                            <i class="fa-solid fa-shield-halved"></i>
+
+                            <span>Admin</span>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- EMAIL -->
+
+                <div class="field">
+
+                    <label>Email address</label>
+
+                    <div class="input">
+
+                        <i class="fa-regular fa-envelope"></i>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="you@example.com">
+
+                    </div>
+
+                </div>
+
+
+                <!-- PASSWORD -->
+
+                <div class="field">
+
+                    <div class="password-title">
+
+                        <label>Password</label>
+
+                        <a href="contact.html">Forgot password?</a>
+
+                    </div>
+
+                    <div class="input">
+
+                        <i class="fa-solid fa-lock"></i>
+
+                        <input
+                            type="password"
+                            id="password"
+                            placeholder="Enter your password">
+
+                        <button
+                            type="button"
+                            onclick="togglePassword()">
+
+                            <i class="fa-regular fa-eye"
+                               id="eye"></i>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- REMEMBER -->
+
+                <div class="remember">
+
+                    <label>
+
+                        <input type="checkbox">
+
+                        <span>Remember me</span>
+
+                    </label>
+
+                </div>
+
+
+                <!-- LOGIN BUTTON -->
+
+                <button class="login-button"
+                        onclick="loginUser()"
+                        type="button">
+
+                    <span>Sign in</span>
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+
+                <div id="message"></div>
+
+
+                <!-- REGISTER -->
+
+                <div class="register">
+
+                    <span>
+                        Don't have an account?
+                    </span>
+
+                    <a href="register.html">
+                        Create account
+                    </a>
+
+                </div>
+
+
+                <!-- SECURITY -->
+
+                <div class="security">
+
+                    <i class="fa-solid fa-shield-check"></i>
+
+                    <span>
+                        Your information is encrypted and secure
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<script>
+
+let selectedRole = "User";
+
+
+/* ================= ROLE ================= */
+
+function selectRole(button){
+
+    document.querySelectorAll(".role")
+        .forEach(role => {
+
+            role.classList.remove("active");
+
+        });
+
+    button.classList.add("active");
+
+    selectedRole =
+        button.querySelector("span").textContent;
+
+}
+
+
+/* ================= PASSWORD ================= */
+
+function togglePassword(){
+
+    const password =
+        document.getElementById("password");
+
+    const eye =
+        document.getElementById("eye");
+
+    if(password.type === "password"){
+
+        password.type = "text";
+
+        eye.classList.remove("fa-eye");
+
+        eye.classList.add("fa-eye-slash");
+
+    }
+
+    else{
+
+        password.type = "password";
+
+        eye.classList.remove("fa-eye-slash");
+
+        eye.classList.add("fa-eye");
+
+    }
+
+}
+
+
+/* ================= LOGIN ================= */
+
+function loginUser(){
+
+    const email =
+        document.getElementById("email").value.trim().toLowerCase();
+
+    const password =
+        document.getElementById("password").value.trim();
+
+    const message =
+        document.getElementById("message");
+
+
+    if(email === "" || password === ""){
+
+        message.innerHTML = `
+            <div class="error">
+                <i class="fa-solid fa-circle-exclamation"></i>
+                Please enter your email and password.
+            </div>
+        `;
+
+        return;
+
+    }
+
+
+    let destination = "index.html";
+    let role = "user";
+
+    if(selectedRole === "User"){
+
+        let account = null;
+
+        try{
+            account = JSON.parse(
+                localStorage.getItem("customer_" + email)
+            );
+        } catch {}
+
+        if(
+            !account &&
+            email === "user@gmail.com" &&
+            password === "user123"
+        ){
+            account = {
+                name: "Demo User",
+                phone: "9000000000",
+                email: email,
+                address: "Hyderabad",
+                password: password
+            };
+            localStorage.setItem(
+                "customer_" + email,
+                JSON.stringify(account)
+            );
+        }
+
+        if(!account || account.password !== password){
+            message.innerHTML = `
+                <div class="error">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    No matching account. Check your details or create an account.
+                </div>
+            `;
+            return;
+        }
+
+    } else {
+
+        let account;
+
+        if(selectedRole === "Admin"){
+            account = {
+                email: "admin@gmail.com",
+                password: "admin123",
+                role: "admin",
+                page: "admin/dashboard.html"
+            };
+        } else {
+            if(localStorage.getItem("staffAccounts") === null){
+                localStorage.setItem("staffAccounts", JSON.stringify([{
+                    staffId: "STF-001",
+                    name: "Nani",
+                    email: "staff@gmail.com",
+                    password: "staff123",
+                    phone: "",
+                    address: "",
+                    position: "Delivery Staff",
+                    department: "Delivery Operations",
+                    status: "Active"
+                }]));
+            }
+
+            let staffRecords = [];
+            try{
+                staffRecords = JSON.parse(localStorage.getItem("staffAccounts") || "[]");
+            } catch {}
+
+            const demoStaff = staffRecords.find(item => item.email.toLowerCase() === "nani@gmail.com");
+            if(demoStaff && demoStaff.name === "Nani"){
+                const oldKey = demoStaff.email.split("@")[0];
+                demoStaff.email = "staff@gmail.com";
+                const bookings = JSON.parse(localStorage.getItem("bookings") || "[]");
+                bookings.forEach(booking => { if(booking.assignedDriver === oldKey) booking.assignedDriver = "staff"; });
+                localStorage.setItem("bookings", JSON.stringify(bookings));
+                localStorage.setItem("staffAccounts", JSON.stringify(staffRecords));
+                const profile = JSON.parse(localStorage.getItem(`staffProfile_driver_${oldKey}`) || "null");
+                if(profile){
+                    profile.email = "staff@gmail.com";
+                    localStorage.setItem("staffProfile_driver_staff", JSON.stringify(profile));
+                    localStorage.removeItem(`staffProfile_driver_${oldKey}`);
+                }
+            }
+
+            const staff = staffRecords.find(item =>
+                item.email.toLowerCase() === email &&
+                item.status === "Active"
+            );
+
+            if(staff){
+                account = {
+                    ...staff,
+                    role: "staff",
+                    page: "admin/driver/dashboard.html"
+                };
+            }
+        }
+
+        if(!account || account.email !== email || account.password !== password){
+            message.innerHTML = `
+                <div class="error">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    Invalid ${selectedRole.toLowerCase()} email or password.
+                </div>
+            `;
+            return;
+        }
+
+        role = account.role;
+        destination = account.page;
+
+    }
+
+    localStorage.setItem("loggedInUser", JSON.stringify({ email: email, role: role }));
+    localStorage.setItem("userRole", role);
+
+
+    message.innerHTML = `
+        <div class="success">
+            <i class="fa-solid fa-circle-check"></i>
+            Login successful!
+        </div>
+    `;
+
+
+    setTimeout(function(){
+
+        window.location.href = destination;
+
+    },1000);
+
+}
+
+</script>
+
+</body>
+</html>

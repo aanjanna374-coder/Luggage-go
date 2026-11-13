@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Contact Support</title>
+
+<link rel="stylesheet"
+href="css/style.css">
+
+</head>
+
+<body data-page="contact">
+
+<header class="navbar">
+
+<a href="home.html"
+class="brand">
+🧳 Luggage<span>Go</span>
+</a>
+
+<nav>
+
+<a href="home.html">Home</a>
+<a href="booking.html">Book Luggage</a>
+<a href="tracking.html">Track</a>
+<a href="my-booking.html">My Bookings</a>
+<a href="profile.html">Profile</a>
+<a class="active" href="contact.html">Contact</a>
+
+</nav>
+
+<div class="nav-user">
+
+<span id="userDisplay">
+User
+</span>
+
+<button onclick="logout()">
+Logout
+</button>
+
+</div>
+
+</header>
+
+
+<main class="container page">
+
+<div class="section-heading">
+
+<h1>
+Contact Support
+</h1>
+
+<p>
+We're here to help you.
+</p>
+
+</div>
+
+
+<div class="contact-grid">
+
+<div class="panel">
+
+<h2>📞 Contact Information</h2>
+
+<h3>
+Phone
+</h3>
+
+<p>
++91 90000 00000
+</p>
+
+
+<h3>
+Email
+</h3>
+
+<p>
+support@luggagogo.com
+</p>
+
+
+<h3>
+Working Hours
+</h3>
+
+<p>
+Monday - Saturday
+<br>
+9:00 AM - 6:00 PM
+</p>
+
+</div>
+
+
+<form class="panel" id="contactForm">
+
+<label>
+Name
+</label>
+
+<input name="name" required>
+
+
+<label>
+Email
+</label>
+
+<input type="email" name="email" required>
+
+<label>
+Subject
+</label>
+
+<input name="subject" required>
+
+
+<label>
+Message
+</label>
+
+<textarea name="message" rows="6"
+required></textarea>
+
+
+<button class="btn primary">
+SEND MESSAGE
+</button>
+
+</form>
+
+</div>
+
+</main>
+
+
+<script src="admin/driver/worker/support/css/js/app.js"></script>
+<script src="js/operations.js"></script>
+
+</body>
+</html>

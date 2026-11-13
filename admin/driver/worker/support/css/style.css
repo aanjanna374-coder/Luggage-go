@@ -1,0 +1,2047 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+@import url(
+'https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap'
+);
+
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    min-height:100vh;
+
+    background:#f5f7ff;
+
+    color:#20243a;
+
+}
+
+
+button,
+input{
+
+    font-family:inherit;
+
+}
+
+
+button{
+
+    cursor:pointer;
+
+}
+
+
+/* =====================================
+   MAIN PAGE
+===================================== */
+
+.page{
+
+    min-height:100vh;
+
+    display:grid;
+
+    grid-template-columns:
+        58% 42%;
+
+    overflow:hidden;
+
+}
+
+
+/* =====================================
+   LEFT PANEL
+===================================== */
+
+.left-panel{
+
+    min-height:100vh;
+
+    position:relative;
+
+    overflow:hidden;
+
+    padding:
+        38px 6% 30px;
+
+    color:white;
+
+    background:
+
+        radial-gradient(
+            circle at 15% 15%,
+            #a34cff 0,
+            transparent 25%
+        ),
+
+        radial-gradient(
+            circle at 90% 80%,
+            #00dce8 0,
+            transparent 24%
+        ),
+
+        linear-gradient(
+            135deg,
+            #302078,
+            #5143ce 45%,
+            #2387df
+        );
+
+}
+
+
+/* =====================================
+   DECORATIVE SHAPES
+===================================== */
+
+.shape{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    pointer-events:none;
+
+}
+
+
+.shape1{
+
+    width:400px;
+
+    height:400px;
+
+    top:-190px;
+
+    right:-150px;
+
+    background:
+        rgba(255,255,255,.10);
+
+}
+
+
+.shape2{
+
+    width:280px;
+
+    height:280px;
+
+    bottom:-140px;
+
+    left:-130px;
+
+    background:
+        rgba(0,255,222,.10);
+
+}
+
+
+.shape3{
+
+    width:130px;
+
+    height:130px;
+
+    right:20%;
+
+    top:42%;
+
+    border:
+        1px solid
+        rgba(255,255,255,.16);
+
+}
+
+
+.dots{
+
+    position:absolute;
+
+    width:100px;
+
+    height:100px;
+
+    right:30px;
+
+    top:130px;
+
+    opacity:.3;
+
+    background-image:
+        radial-gradient(
+            white 1.5px,
+            transparent 1.5px
+        );
+
+    background-size:13px 13px;
+
+}
+
+
+/* =====================================
+   LOGO
+===================================== */
+
+.logo{
+
+    position:relative;
+
+    z-index:5;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+
+.logo-box{
+
+    width:46px;
+
+    height:46px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:14px;
+
+    color:#4732a5;
+
+    background:white;
+
+    font-size:19px;
+
+    box-shadow:
+        0 10px 25px
+        rgba(20,15,80,.2);
+
+}
+
+
+.logo h2{
+
+    font-size:24px;
+
+    font-weight:800;
+
+    line-height:1;
+
+}
+
+
+.logo h2 span{
+
+    color:#63edff;
+
+}
+
+
+.logo small{
+
+    display:block;
+
+    margin-top:3px;
+
+    color:
+        rgba(255,255,255,.55);
+
+    font-size:7px;
+
+    letter-spacing:2px;
+
+}
+
+
+/* =====================================
+   HERO
+===================================== */
+
+.hero{
+
+    position:relative;
+
+    z-index:5;
+
+    margin-top:50px;
+
+    max-width:600px;
+
+}
+
+
+.badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    padding:
+        8px 13px;
+
+    border-radius:30px;
+
+    background:
+        rgba(255,255,255,.11);
+
+    border:
+        1px solid
+        rgba(255,255,255,.18);
+
+    backdrop-filter:blur(10px);
+
+    font-size:8px;
+
+    font-weight:700;
+
+    letter-spacing:.8px;
+
+}
+
+
+.badge i{
+
+    color:#ffdd55;
+
+}
+
+
+.hero h1{
+
+    margin-top:20px;
+
+    font-size:
+        clamp(42px,5vw,68px);
+
+    line-height:1.06;
+
+    letter-spacing:-2px;
+
+    font-weight:800;
+
+}
+
+
+.hero h1 span{
+
+    color:#61efff;
+
+}
+
+
+.hero p{
+
+    max-width:510px;
+
+    margin-top:18px;
+
+    color:
+        rgba(255,255,255,.72);
+
+    font-size:12px;
+
+    line-height:1.8;
+
+}
+
+
+/* =====================================
+   FEATURES
+===================================== */
+
+.feature-list{
+
+    display:flex;
+
+    gap:10px;
+
+    margin-top:25px;
+
+}
+
+
+.feature{
+
+    min-width:145px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:9px;
+
+    padding:10px;
+
+    border-radius:14px;
+
+    background:
+        rgba(255,255,255,.09);
+
+    border:
+        1px solid
+        rgba(255,255,255,.13);
+
+    backdrop-filter:blur(10px);
+
+}
+
+
+.feature-icon{
+
+    min-width:35px;
+
+    width:35px;
+
+    height:35px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:10px;
+
+    background:white;
+
+    font-size:13px;
+
+}
+
+
+.blue{
+
+    color:#4779ff;
+
+}
+
+
+.green{
+
+    color:#18b86e;
+
+}
+
+
+.orange{
+
+    color:#f39a1e;
+
+}
+
+
+.feature strong{
+
+    display:block;
+
+    font-size:8px;
+
+}
+
+
+.feature small{
+
+    display:block;
+
+    margin-top:2px;
+
+    color:
+        rgba(255,255,255,.55);
+
+    font-size:6px;
+
+}
+
+
+/* =====================================
+   LUGGAGE AREA
+===================================== */
+
+.luggage-area{
+
+    height:350px;
+
+    position:relative;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+
+/* =====================================
+   SUITCASE
+===================================== */
+
+.suitcase{
+
+    width:175px;
+
+    height:230px;
+
+    position:relative;
+
+    z-index:5;
+
+    margin-top:20px;
+
+    animation:
+        suitcaseFloat 4s ease-in-out infinite;
+
+}
+
+
+.handle{
+
+    position:absolute;
+
+    width:60px;
+
+    height:60px;
+
+    left:58px;
+
+    top:-43px;
+
+    border:
+        9px solid #22226d;
+
+    border-bottom:0;
+
+    border-radius:
+        30px 30px 0 0;
+
+}
+
+
+.handle-grip{
+
+    position:absolute;
+
+    width:42px;
+
+    height:11px;
+
+    left:67px;
+
+    top:-48px;
+
+    border-radius:10px;
+
+    background:#282778;
+
+}
+
+
+.suitcase-body{
+
+    width:175px;
+
+    height:205px;
+
+    position:absolute;
+
+    bottom:5px;
+
+    border-radius:
+        27px 27px 22px 22px;
+
+    overflow:hidden;
+
+    background:
+
+        linear-gradient(
+            145deg,
+            #ff5a9a,
+            #ff3476 50%,
+            #e52a68
+        );
+
+    box-shadow:
+
+        0 28px 45px
+        rgba(22,17,80,.4),
+
+        inset
+        8px 0 15px
+        rgba(255,255,255,.12);
+
+}
+
+
+.suitcase-body::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:7px;
+
+    height:170px;
+
+    left:13px;
+
+    top:18px;
+
+    border-radius:10px;
+
+    background:
+        rgba(255,255,255,.13);
+
+}
+
+
+.shine{
+
+    position:absolute;
+
+    width:70px;
+
+    height:180px;
+
+    left:17px;
+
+    top:5px;
+
+    border-radius:50%;
+
+    transform:rotate(8deg);
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,.16),
+            transparent
+        );
+
+}
+
+
+.suitcase-brand{
+
+    position:absolute;
+
+    top:65px;
+
+    left:50%;
+
+    transform:
+        translateX(-50%);
+
+    width:65px;
+
+    height:65px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:19px;
+
+    background:
+        rgba(255,255,255,.14);
+
+    border:
+        1px solid
+        rgba(255,255,255,.24);
+
+    backdrop-filter:blur(8px);
+
+}
+
+
+.suitcase-brand i{
+
+    font-size:20px;
+
+    transform:rotate(-25deg);
+
+}
+
+
+.suitcase-brand b{
+
+    font-size:11px;
+
+    letter-spacing:2px;
+
+}
+
+
+.strap{
+
+    position:absolute;
+
+    width:4px;
+
+    height:160px;
+
+    top:22px;
+
+    right:26px;
+
+    border-radius:10px;
+
+    background:
+        rgba(0,0,0,.12);
+
+}
+
+
+.lock{
+
+    position:absolute;
+
+    bottom:18px;
+
+    left:50%;
+
+    transform:
+        translateX(-50%);
+
+    width:28px;
+
+    height:23px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:6px;
+
+    color:#715000;
+
+    background:#ffdc49;
+
+    font-size:10px;
+
+}
+
+
+.wheel{
+
+    position:absolute;
+
+    bottom:0;
+
+    width:24px;
+
+    height:24px;
+
+    border-radius:50%;
+
+    background:#1c205a;
+
+    border:
+        5px solid #5b62a4;
+
+}
+
+
+.left-wheel{
+
+    left:25px;
+
+}
+
+
+.right-wheel{
+
+    right:25px;
+
+}
+
+
+/* =====================================
+   FLOATING CARDS
+===================================== */
+
+.travel-card{
+
+    position:absolute;
+
+    z-index:10;
+
+    background:
+        rgba(255,255,255,.96);
+
+    color:#292d47;
+
+    border-radius:15px;
+
+    box-shadow:
+        0 18px 40px
+        rgba(20,20,90,.22);
+
+    animation:
+        cardFloat 4s ease-in-out infinite;
+
+}
+
+
+.location-card{
+
+    left:3%;
+
+    top:45px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:9px;
+
+    padding:11px;
+
+}
+
+
+.card-icon{
+
+    width:35px;
+
+    height:35px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:10px;
+
+    color:#6252eb;
+
+    background:#efecff;
+
+}
+
+
+.location-card small{
+
+    display:block;
+
+    color:#9299ab;
+
+    font-size:6px;
+
+    font-weight:700;
+
+}
+
+
+.location-card strong{
+
+    display:block;
+
+    margin-top:2px;
+
+    font-size:10px;
+
+}
+
+
+.live-dot{
+
+    width:7px;
+
+    height:7px;
+
+    margin-left:4px;
+
+    border-radius:50%;
+
+    background:#19c977;
+
+    box-shadow:
+        0 0 0 4px #dcf8ea;
+
+}
+
+
+/* =====================================
+   TRACKING
+===================================== */
+
+.tracking-card{
+
+    right:0;
+
+    bottom:22px;
+
+    width:190px;
+
+    padding:13px;
+
+}
+
+
+.tracking-header{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    color:#858da0;
+
+    font-size:7px;
+
+}
+
+
+.tracking-header b{
+
+    color:#13ad69;
+
+    font-size:6px;
+
+}
+
+
+.progress{
+
+    display:flex;
+
+    align-items:center;
+
+    margin:
+        15px 4px 6px;
+
+}
+
+
+.point{
+
+    width:8px;
+
+    height:8px;
+
+    border-radius:50%;
+
+    background:#d9dce6;
+
+}
+
+
+.point.active{
+
+    background:#6653ed;
+
+    box-shadow:
+        0 0 0 4px #ebe9ff;
+
+}
+
+
+.progress-line{
+
+    height:3px;
+
+    flex:1;
+
+    background:
+        linear-gradient(
+            90deg,
+            #6653ed,
+            #dcdfe9
+        );
+
+}
+
+
+.tracking-text{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    color:#9299a9;
+
+    font-size:6px;
+
+}
+
+
+/* =====================================
+   RATING
+===================================== */
+
+.rating-card{
+
+    position:absolute;
+
+    z-index:10;
+
+    left:10%;
+
+    bottom:25px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    padding:9px 12px;
+
+    border-radius:14px;
+
+    color:#292d47;
+
+    background:white;
+
+    box-shadow:
+        0 15px 35px
+        rgba(20,20,90,.18);
+
+}
+
+
+.star{
+
+    width:29px;
+
+    height:29px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:9px;
+
+    color:#a67a00;
+
+    background:#fff1a8;
+
+    font-size:15px;
+
+}
+
+
+.rating-card strong{
+
+    display:block;
+
+    font-size:10px;
+
+}
+
+
+.rating-card small{
+
+    display:block;
+
+    color:#9299a9;
+
+    font-size:6px;
+
+}
+
+
+/* =====================================
+   RIGHT PANEL
+===================================== */
+
+.right-panel{
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:40px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffffff,
+            #f7f8ff
+        );
+
+}
+
+
+/* =====================================
+   LOGIN CARD
+===================================== */
+
+.login-card{
+
+    width:100%;
+
+    max-width:420px;
+
+    padding:35px;
+
+    border-radius:27px;
+
+    background:white;
+
+    border:
+        1px solid #eaedf5;
+
+    box-shadow:
+        0 25px 65px
+        rgba(39,45,110,.11);
+
+    position:relative;
+
+    overflow:hidden;
+
+    animation:
+        loginAppear .7s ease;
+
+}
+
+
+.login-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    right:0;
+
+    top:0;
+
+    height:4px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #ff4f91,
+            #7154ff,
+            #2d91ed,
+            #18cfae
+        );
+
+}
+
+
+/* =====================================
+   HEADER
+===================================== */
+
+.login-header{
+
+    text-align:center;
+
+}
+
+
+.welcome-icon{
+
+    width:48px;
+
+    height:48px;
+
+    margin:auto;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:15px;
+
+    color:#6453ed;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f1eeff,
+            #e7f5ff
+        );
+
+    font-size:19px;
+
+}
+
+
+.login-header h1{
+
+    margin-top:13px;
+
+    color:#20243b;
+
+    font-size:25px;
+
+    font-weight:800;
+
+}
+
+
+.login-header p{
+
+    margin-top:4px;
+
+    color:#9299aa;
+
+    font-size:10px;
+
+}
+
+
+/* =====================================
+   FORM
+===================================== */
+
+.form-group{
+
+    margin-top:19px;
+
+}
+
+
+.form-group > label{
+
+    display:block;
+
+    margin-bottom:7px;
+
+    color:#3d4558;
+
+    font-size:10px;
+
+    font-weight:700;
+
+}
+
+
+/* =====================================
+   ROLES
+===================================== */
+
+.roles{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:7px;
+
+}
+
+
+.role{
+
+    height:60px;
+
+    border:
+        1px solid #e6e9f1;
+
+    border-radius:13px;
+
+    background:#fafbfe;
+
+    color:#8991a4;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:5px;
+
+    transition:.3s;
+
+}
+
+
+.role i{
+
+    font-size:14px;
+
+}
+
+
+.role span{
+
+    font-size:8px;
+
+    font-weight:700;
+
+}
+
+
+.role:hover{
+
+    transform:
+        translateY(-2px);
+
+    border-color:#6654ed;
+
+}
+
+
+.role.active{
+
+    color:white;
+
+    border-color:transparent;
+
+    background:
+        linear-gradient(
+            135deg,
+            #6853ef,
+            #397ee8
+        );
+
+    box-shadow:
+        0 9px 22px
+        rgba(90,73,225,.22);
+
+}
+
+
+/* =====================================
+   INPUT
+===================================== */
+
+.input-box{
+
+    height:49px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:9px;
+
+    padding:0 13px;
+
+    border:
+        1.5px solid #e3e6ed;
+
+    border-radius:11px;
+
+    background:#fafbfe;
+
+    transition:.3s;
+
+}
+
+
+.input-box:focus-within{
+
+    background:white;
+
+    border-color:#6654ee;
+
+    box-shadow:
+        0 0 0 4px
+        rgba(102,84,238,.08);
+
+}
+
+
+.input-box > i{
+
+    color:#9ca4b5;
+
+    font-size:12px;
+
+}
+
+
+.input-box input{
+
+    flex:1;
+
+    width:100%;
+
+    height:100%;
+
+    outline:none;
+
+    border:0;
+
+    background:transparent;
+
+    color:#22263c;
+
+    font-size:10px;
+
+}
+
+
+.input-box input::placeholder{
+
+    color:#abb1bf;
+
+}
+
+
+/* =====================================
+   PASSWORD
+===================================== */
+
+.password-label{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    margin-bottom:7px;
+
+}
+
+
+.password-label label{
+
+    color:#3d4558;
+
+    font-size:10px;
+
+    font-weight:700;
+
+}
+
+
+.password-label a{
+
+    color:#6352ed;
+
+    font-size:8px;
+
+    font-weight:600;
+
+    text-decoration:none;
+
+}
+
+
+.eye{
+
+    border:0;
+
+    background:transparent;
+
+    color:#969ead;
+
+    font-size:12px;
+
+}
+
+
+.eye:hover{
+
+    color:#6453ee;
+
+}
+
+
+/* =====================================
+   REMEMBER
+===================================== */
+
+.remember{
+
+    margin-top:13px;
+
+}
+
+
+.remember label{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:6px;
+
+    color:#8e96a7;
+
+    font-size:8px;
+
+}
+
+
+.remember input{
+
+    accent-color:#6553ed;
+
+}
+
+
+/* =====================================
+   LOGIN BUTTON
+===================================== */
+
+.login-btn{
+
+    width:100%;
+
+    height:50px;
+
+    margin-top:19px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:11px;
+
+    border:0;
+
+    border-radius:12px;
+
+    color:white;
+
+    background:
+        linear-gradient(
+            100deg,
+            #6651ef,
+            #397de8
+        );
+
+    box-shadow:
+        0 11px 24px
+        rgba(86,72,221,.25);
+
+    font-size:11px;
+
+    font-weight:700;
+
+    transition:.3s;
+
+}
+
+
+.login-btn:hover{
+
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 16px 30px
+        rgba(86,72,221,.32);
+
+}
+
+
+.login-btn:hover i{
+
+    transform:
+        translateX(4px);
+
+}
+
+
+.login-btn i{
+
+    transition:.3s;
+
+}
+
+
+/* =====================================
+   MESSAGE
+===================================== */
+
+#message{
+
+    min-height:18px;
+
+    margin-top:8px;
+
+    text-align:center;
+
+    font-size:8px;
+
+    font-weight:600;
+
+}
+
+
+.error{
+
+    color:#ef4444;
+
+}
+
+
+.success{
+
+    color:#16a34a;
+
+}
+
+
+/* =====================================
+   DIVIDER
+===================================== */
+
+.divider{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:9px;
+
+    margin:18px 0;
+
+    color:#b1b7c3;
+
+    font-size:7px;
+
+}
+
+
+.divider::before,
+.divider::after{
+
+    content:"";
+
+    height:1px;
+
+    flex:1;
+
+    background:#eceef3;
+
+}
+
+
+/* =====================================
+   GOOGLE
+===================================== */
+
+.google-btn{
+
+    width:100%;
+
+    height:46px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:8px;
+
+    border:
+        1px solid #e1e5ed;
+
+    border-radius:11px;
+
+    background:white;
+
+    color:#525a6c;
+
+    font-size:9px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+
+.google-btn i{
+
+    color:#4285f4;
+
+    font-size:14px;
+
+}
+
+
+.google-btn:hover{
+
+    background:#f8f9fc;
+
+}
+
+
+/* =====================================
+   REGISTER
+===================================== */
+
+.register{
+
+    margin-top:19px;
+
+    text-align:center;
+
+    color:#9299a9;
+
+    font-size:8px;
+
+}
+
+
+.register a{
+
+    margin-left:4px;
+
+    color:#6352ed;
+
+    font-weight:700;
+
+    text-decoration:none;
+
+}
+
+
+.register a:hover{
+
+    text-decoration:underline;
+
+}
+
+
+/* =====================================
+   SECURITY
+===================================== */
+
+.security{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:6px;
+
+    margin-top:18px;
+
+    padding-top:14px;
+
+    border-top:
+        1px solid #eef0f4;
+
+    color:#a1a7b4;
+
+    font-size:7px;
+
+}
+
+
+.security i{
+
+    color:#17ae70;
+
+}
+
+
+/* =====================================
+   ANIMATIONS
+===================================== */
+
+@keyframes suitcaseFloat{
+
+    0%,
+    100%{
+
+        transform:
+            translateY(0)
+            rotate(0);
+
+    }
+
+    50%{
+
+        transform:
+            translateY(-12px)
+            rotate(1deg);
+
+    }
+
+}
+
+
+@keyframes cardFloat{
+
+    0%,
+    100%{
+
+        transform:
+            translateY(0);
+
+    }
+
+    50%{
+
+        transform:
+            translateY(-8px);
+
+    }
+
+}
+
+
+@keyframes loginAppear{
+
+    from{
+
+        opacity:0;
+
+        transform:
+            translateY(25px)
+            scale(.97);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+            translateY(0)
+            scale(1);
+
+    }
+
+}
+
+
+/* =====================================
+   TABLET
+===================================== */
+
+@media(max-width:1050px){
+
+    .page{
+
+        grid-template-columns:
+            52% 48%;
+
+    }
+
+    .left-panel{
+
+        padding-left:35px;
+
+        padding-right:35px;
+
+    }
+
+    .hero h1{
+
+        font-size:48px;
+
+    }
+
+    .feature-list{
+
+        flex-wrap:wrap;
+
+    }
+
+    .right-panel{
+
+        padding:25px;
+
+    }
+
+}
+
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media(max-width:780px){
+
+    .page{
+
+        display:block;
+
+    }
+
+
+    .left-panel{
+
+        min-height:620px;
+
+        padding:
+            30px 20px;
+
+    }
+
+
+    .hero{
+
+        text-align:center;
+
+        margin-top:40px;
+
+        margin-left:auto;
+
+        margin-right:auto;
+
+    }
+
+
+    .hero h1{
+
+        font-size:39px;
+
+    }
+
+
+    .hero p{
+
+        margin-left:auto;
+
+        margin-right:auto;
+
+    }
+
+
+    .feature-list{
+
+        justify-content:center;
+
+    }
+
+
+    .luggage-area{
+
+        height:300px;
+
+    }
+
+
+    .right-panel{
+
+        min-height:auto;
+
+        padding:
+            25px 15px 40px;
+
+    }
+
+
+    .login-card{
+
+        max-width:500px;
+
+    }
+
+}
+
+
+/* =====================================
+   SMALL MOBILE
+===================================== */
+
+@media(max-width:480px){
+
+    .logo h2{
+
+        font-size:21px;
+
+    }
+
+
+    .hero h1{
+
+        font-size:33px;
+
+    }
+
+
+    .hero p{
+
+        font-size:10px;
+
+    }
+
+
+    .feature{
+
+        min-width:130px;
+
+    }
+
+
+    .luggage{
+
+        transform:scale(.82);
+
+    }
+
+
+    .location-card{
+
+        transform:scale(.82);
+
+        transform-origin:left top;
+
+    }
+
+
+    .tracking-card{
+
+        transform:scale(.82);
+
+        transform-origin:right bottom;
+
+    }
+
+
+    .rating-card{
+
+        transform:scale(.82);
+
+        transform-origin:left bottom;
+
+    }
+
+
+    .login-card{
+
+        padding:
+            28px 20px;
+
+        border-radius:23px;
+
+    }
+
+}

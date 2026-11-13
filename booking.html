@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>LuggageGo - Book Luggage</title>
+
+<link rel="stylesheet"
+      href="css/style.css">
+
+</head>
+
+<body>
+
+<header class="navbar">
+
+<a href="home.html"
+   class="brand">
+🧳 Luggage<span>Go</span>
+</a>
+
+<nav>
+
+<a href="home.html">Home</a>
+
+<a class="active"
+   href="booking.html">
+Book Luggage
+</a>
+
+<a href="tracking.html">
+Track
+</a>
+
+<a href="my-booking.html">
+My Bookings
+</a>
+
+<a href="profile.html">
+Profile
+</a>
+
+<a href="contact.html">
+Contact
+</a>
+
+</nav>
+
+<div class="nav-user">
+
+<span id="userDisplay">
+User
+</span>
+
+<button onclick="logout()">
+Logout
+</button>
+
+</div>
+
+</header>
+
+
+<main class="container page">
+
+<div class="section-heading">
+
+<h1>
+Book Luggage
+</h1>
+
+<p>
+Enter your transportation details.
+</p>
+
+</div>
+
+
+<form id="bookingForm"
+      class="panel">
+
+
+<h3>
+Customer Details
+</h3>
+
+
+<div class="two-column">
+
+<div>
+
+<label>
+Full Name
+</label>
+
+<input
+type="text"
+id="customerName"
+required
+>
+
+</div>
+
+
+<div>
+
+<label>
+Phone Number
+</label>
+
+<input
+type="tel"
+id="customerPhone"
+required
+>
+
+</div>
+
+</div>
+
+
+<label>
+Email
+</label>
+
+<input
+type="email"
+id="customerEmail"
+required
+>
+
+
+<h3>
+Pickup & Destination
+</h3>
+
+
+<div class="two-column">
+
+<div>
+
+<label>
+Pickup City
+</label>
+
+<input
+type="text"
+id="pickupCity"
+placeholder="Hyderabad"
+required
+>
+
+</div>
+
+
+<div>
+
+<label>
+Destination City
+</label>
+
+<input
+type="text"
+id="destinationCity"
+placeholder="Vijayawada"
+required
+>
+
+</div>
+
+</div>
+
+
+<div class="two-column">
+
+<div>
+
+<label>
+Pickup Address
+</label>
+
+<textarea
+id="pickupAddress"
+required
+></textarea>
+
+</div>
+
+
+<div>
+
+<label>
+Delivery Address
+</label>
+
+<textarea
+id="deliveryAddress"
+required
+></textarea>
+
+</div>
+
+</div>
+
+
+<div class="two-column">
+
+<div>
+
+<label>
+Pickup Date
+</label>
+
+<input
+type="date"
+id="pickupDate"
+required
+>
+
+</div>
+
+
+<div>
+
+<label>
+Delivery Date
+</label>
+
+<input
+type="date"
+id="deliveryDate"
+required
+>
+
+</div>
+
+</div>
+
+
+<h3>
+Luggage Details
+</h3>
+
+
+<div class="three-column">
+
+<div>
+
+<label>
+Number of Bags
+</label>
+
+<input
+type="number"
+id="bags"
+min="1"
+value="1"
+required
+>
+
+</div>
+
+
+<div>
+
+<label>
+Total Weight KG
+</label>
+
+<input
+type="number"
+id="weight"
+min="1"
+value="10"
+required
+>
+
+</div>
+
+
+<div>
+
+<label>
+Luggage Type
+</label>
+
+<select id="luggageType">
+
+<option>
+Suitcase
+</option>
+
+<option>
+Travel Bag
+</option>
+
+<option>
+Box
+</option>
+
+<option>
+Other
+</option>
+
+</select>
+
+</div>
+
+</div>
+
+
+<label>
+Special Instructions
+</label>
+
+<textarea
+id="notes"
+placeholder="Fragile items, special handling..."
+></textarea>
+
+
+<div class="fare-box">
+
+<span>
+Estimated Fare
+</span>
+
+<strong id="fare">
+₹550
+</strong>
+
+</div>
+
+
+<button
+class="btn primary"
+type="submit">
+
+CONFIRM BOOKING
+
+</button>
+
+
+<p
+id="bookingMessage"
+class="message">
+</p>
+
+
+</form>
+
+</main>
+
+
+<script src="admin/driver/worker/support/css/js/booking.js"></script>
+<script src="admin/driver/worker/support/css/js/app.js"></script>
+
+</body>
+</html>

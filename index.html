@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>LuggageGo | Dashboard</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/dashboard.css">
+
+</head>
+
+
+<body>
+
+
+<div class="app">
+
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar" id="sidebar">
+
+
+        <div class="brand">
+
+            <div class="brand-icon">
+
+                <i class="fa-solid fa-suitcase-rolling"></i>
+
+            </div>
+
+            <div>
+
+                <h2>Luggage<span>Go</span></h2>
+
+                <small>SMART TRAVEL</small>
+
+            </div>
+
+        </div>
+
+
+        <div class="menu-title">
+            MAIN MENU
+        </div>
+
+
+        <nav>
+
+
+            <a href="index.html" class="menu active">
+
+                <i class="fa-solid fa-house"></i>
+
+                <span>Dashboard</span>
+
+            </a>
+
+
+            <a href="my-booking.html" class="menu">
+
+                <i class="fa-solid fa-suitcase"></i>
+
+                <span>My Luggage</span>
+
+                <b>2</b>
+
+            </a>
+
+
+            <a href="tracking.html" class="menu">
+
+                <i class="fa-solid fa-location-crosshairs"></i>
+
+                <span>Track Luggage</span>
+
+            </a>
+
+
+            <a href="booking.html" class="menu">
+
+                <i class="fa-solid fa-ticket"></i>
+
+                <span>Book Delivery</span>
+
+            </a>
+
+
+            <a href="my-booking.html" class="menu">
+
+                <i class="fa-solid fa-clock-rotate-left"></i>
+
+                <span>History</span>
+
+            </a>
+
+
+            <a href="notifications.html" class="menu">
+
+                <i class="fa-regular fa-bell"></i>
+
+                <span>Notifications</span>
+
+                <b class="notification-number">3</b>
+
+            </a>
+
+
+        </nav>
+
+
+        <div class="menu-title bottom-title">
+            ACCOUNT
+        </div>
+
+
+        <nav>
+
+
+            <a href="profile.html" class="menu">
+
+                <i class="fa-regular fa-user"></i>
+
+                <span>Profile</span>
+
+            </a>
+
+
+            <a href="contact.html" class="menu">
+
+                <i class="fa-regular fa-circle-question"></i>
+
+                <span>Help & Support</span>
+
+            </a>
+
+
+        </nav>
+
+
+        <div class="sidebar-bottom">
+
+
+            <div class="help-card">
+
+                <div class="help-icon">
+
+                    <i class="fa-solid fa-headset"></i>
+
+                </div>
+
+                <strong>
+                    Need help?
+                </strong>
+
+                <p>
+                    Our support team is ready.
+                </p>
+
+                <button onclick="location.href='contact.html'">
+                    Get Support
+                </button>
+
+            </div>
+
+
+            <a href="home.html" class="logout">
+
+                <i class="fa-solid fa-arrow-right-from-bracket"></i>
+
+                Logout
+
+            </a>
+
+
+        </div>
+
+
+    </aside>
+
+
+
+    <!-- ================= MAIN ================= -->
+
+    <main class="main">
+
+
+        <!-- TOPBAR -->
+
+        <header class="topbar">
+
+
+            <button class="mobile-menu"
+                    onclick="toggleSidebar()">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+
+            <div class="search">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <input
+                    type="text"
+                    placeholder="Search luggage, bookings...">
+
+            </div>
+
+
+            <div class="top-actions">
+
+
+                <button class="icon-button" aria-label="Notifications">
+
+                    <i class="fa-regular fa-bell"></i>
+
+                    <span>3</span>
+
+                </button>
+
+
+                <div class="profile-mini">
+
+
+                    <div class="avatar">
+                        A
+                    </div>
+
+
+                    <div>
+
+                        <strong id="userName">
+                            Anjanna
+                        </strong>
+
+                        <small>
+                            Traveler
+                        </small>
+
+                    </div>
+
+
+                    <i class="fa-solid fa-chevron-down"></i>
+
+
+                </div>
+
+
+            </div>
+
+
+        </header>
+
+
+
+        <!-- CONTENT -->
+
+        <section class="content">
+
+
+            <!-- WELCOME -->
+
+            <div class="welcome">
+
+
+                <div>
+
+                    <p class="welcome-label">
+                        MONDAY, AUGUST 24
+                    </p>
+
+                    <h1>
+                        Good morning, <span id="welcomeName">Anjanna</span> 👋
+                    </h1>
+
+                    <p class="welcome-text">
+                        Ready for your next journey?
+                        Your luggage is safe with us.
+                    </p>
+
+                </div>
+
+
+                <button class="primary-btn"
+                        onclick="location.href='booking.html'">
+
+                    <i class="fa-solid fa-plus"></i>
+
+                    New Delivery
+
+                </button>
+
+
+            </div>
+
+
+
+            <!-- STATS -->
+
+            <div class="stats">
+
+
+                <div class="stat-card purple">
+
+                    <div class="stat-top">
+
+                        <div class="stat-icon">
+
+                            <i class="fa-solid fa-suitcase"></i>
+
+                        </div>
+
+                        <span class="stat-badge">
+                            +2 this month
+                        </span>
+
+                    </div>
+
+                    <h2>12</h2>
+
+                    <p>Total Luggage</p>
+
+                </div>
+
+
+                <div class="stat-card blue">
+
+                    <div class="stat-top">
+
+                        <div class="stat-icon">
+
+                            <i class="fa-solid fa-route"></i>
+
+                        </div>
+
+                        <span class="stat-badge">
+                            Active
+                        </span>
+
+                    </div>
+
+                    <h2>2</h2>
+
+                    <p>In Transit</p>
+
+                </div>
+
+
+                <div class="stat-card green">
+
+                    <div class="stat-top">
+
+                        <div class="stat-icon">
+
+                            <i class="fa-solid fa-circle-check"></i>
+
+                        </div>
+
+                        <span class="stat-badge">
+                            100%
+                        </span>
+
+                    </div>
+
+                    <h2>10</h2>
+
+                    <p>Delivered</p>
+
+                </div>
+
+
+                <div class="stat-card orange">
+
+                    <div class="stat-top">
+
+                        <div class="stat-icon">
+
+                            <i class="fa-solid fa-wallet"></i>
+
+                        </div>
+
+                        <span class="stat-badge">
+                            This month
+                        </span>
+
+                    </div>
+
+                    <h2>₹2,840</h2>
+
+                    <p>Total Spent</p>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- ACTIVE JOURNEY -->
+
+            <div class="section-title">
+
+                <div>
+
+                    <h2>
+                        Active Journey
+                    </h2>
+
+                    <p>
+                        Your luggage is currently on the move
+                    </p>
+
+                </div>
+
+
+                <a href="tracking.html">
+                    View details →
+                </a>
+
+            </div>
+
+
+
+            <div class="journey-card">
+
+
+                <div class="journey-info">
+
+
+                    <div class="journey-head">
+
+                        <div class="luggage-avatar">
+
+                            <i class="fa-solid fa-suitcase-rolling"></i>
+
+                        </div>
+
+
+                        <div>
+
+                            <span class="tracking-id">
+                                LUGGAGE ID
+                            </span>
+
+                            <h3>
+                                LG-20481
+                            </h3>
+
+                        </div>
+
+
+                        <span class="status">
+                            <i class="fa-solid fa-circle"></i>
+                            IN TRANSIT
+                        </span>
+
+                    </div>
+
+
+                    <div class="route">
+
+
+                        <div class="location">
+
+                            <div class="location-dot start"></div>
+
+                            <div>
+
+                                <small>
+                                    PICKUP
+                                </small>
+
+                                <strong>
+                                    Hyderabad
+                                </strong>
+
+                                <span>
+                                    24 Aug, 08:30 AM
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="route-line">
+
+                            <div class="route-progress"></div>
+
+                            <div class="moving-icon">
+
+                                <i class="fa-solid fa-truck"></i>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="location">
+
+                            <div class="location-dot end"></div>
+
+                            <div>
+
+                                <small>
+                                    DESTINATION
+                                </small>
+
+                                <strong>
+                                    Chennai
+                                </strong>
+
+                                <span>
+                                    Expected 24 Aug, 06:30 PM
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+
+                    <div class="journey-bottom">
+
+
+                        <div>
+
+                            <small>
+                                ESTIMATED ARRIVAL
+                            </small>
+
+                            <strong>
+                                2h 35m
+                            </strong>
+
+                        </div>
+
+
+                        <div>
+
+                            <small>
+                                CURRENT LOCATION
+                            </small>
+
+                            <strong>
+                                Vijayawada
+                            </strong>
+
+                        </div>
+
+
+                        <button
+                            onclick="location.href='tracking.html'">
+
+                            Track Live
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </button>
+
+
+                    </div>
+
+
+                </div>
+
+
+                <div class="journey-art">
+
+                    <div class="cloud cloud1"></div>
+
+                    <div class="cloud cloud2"></div>
+
+
+                    <div class="mini-plane">
+
+                        <i class="fa-solid fa-plane"></i>
+
+                    </div>
+
+
+                    <div class="map-route">
+
+                        <span class="map-point one"></span>
+
+                        <span class="map-point two"></span>
+
+                        <span class="map-point three"></span>
+
+                    </div>
+
+
+                    <div class="mini-suitcase">
+
+                        <i class="fa-solid fa-suitcase-rolling"></i>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- QUICK ACTIONS -->
+
+            <div class="section-title actions-title">
+
+                <div>
+
+                    <h2>
+                        Quick Actions
+                    </h2>
+
+                    <p>
+                        Everything you need in one place
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="quick-actions">
+
+
+                 <div class="action-card"
+                     onclick="location.href='my-booking.html'">
+
+                    <div class="action-icon purple-bg">
+
+                        <i class="fa-solid fa-suitcase-rolling"></i>
+
+                    </div>
+
+                    <h3>
+                        My Luggage
+                    </h3>
+
+                    <p>
+                        Manage your luggage
+                    </p>
+
+                    <span>
+                        Open →
+                    </span>
+
+                </div>
+
+
+                <div class="action-card"
+                     onclick="location.href='tracking.html'">
+
+                    <div class="action-icon blue-bg">
+
+                        <i class="fa-solid fa-location-dot"></i>
+
+                    </div>
+
+                    <h3>
+                        Track Luggage
+                    </h3>
+
+                    <p>
+                        See live location
+                    </p>
+
+                    <span>
+                        Track →
+                    </span>
+
+                </div>
+
+
+                <div class="action-card"
+                     onclick="location.href='booking.html'">
+
+                    <div class="action-icon pink-bg">
+
+                        <i class="fa-solid fa-ticket"></i>
+
+                    </div>
+
+                    <h3>
+                        Book Delivery
+                    </h3>
+
+                    <p>
+                        Send luggage anywhere
+                    </p>
+
+                    <span>
+                        Book →
+                    </span>
+
+                </div>
+
+
+                <div class="action-card"
+                     onclick="location.href='my-booking.html'">
+
+                    <div class="action-icon green-bg">
+
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+
+                    </div>
+
+                    <h3>
+                        History
+                    </h3>
+
+                    <p>
+                        View past deliveries
+                    </p>
+
+                    <span>
+                        View →
+                    </span>
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- BOTTOM GRID -->
+
+            <div class="bottom-grid">
+
+
+                <!-- RECENT -->
+
+                <div class="recent-card">
+
+
+                    <div class="card-heading">
+
+                        <div>
+
+                            <h2>
+                                Recent Deliveries
+                            </h2>
+
+                            <p>
+                                Your latest luggage activity
+                            </p>
+
+                        </div>
+
+                        <a href="my-booking.html">
+                            View all
+                        </a>
+
+                    </div>
+
+
+                    <div class="delivery">
+
+
+                        <div class="delivery-icon pink-bg">
+
+                            <i class="fa-solid fa-suitcase"></i>
+
+                        </div>
+
+
+                        <div class="delivery-main">
+
+                            <strong>
+                                LG-19283
+                            </strong>
+
+                            <span>
+                                Hyderabad → Bangalore
+                            </span>
+
+                        </div>
+
+
+                        <div class="delivery-right">
+
+                            <span class="delivered">
+                                Delivered
+                            </span>
+
+                            <small>
+                                21 Aug
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="delivery">
+
+
+                        <div class="delivery-icon blue-bg">
+
+                            <i class="fa-solid fa-suitcase"></i>
+
+                        </div>
+
+
+                        <div class="delivery-main">
+
+                            <strong>
+                                LG-18742
+                            </strong>
+
+                            <span>
+                                Chennai → Hyderabad
+                            </span>
+
+                        </div>
+
+
+                        <div class="delivery-right">
+
+                            <span class="delivered">
+                                Delivered
+                            </span>
+
+                            <small>
+                                18 Aug
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="delivery">
+
+
+                        <div class="delivery-icon green-bg">
+
+                            <i class="fa-solid fa-suitcase"></i>
+
+                        </div>
+
+
+                        <div class="delivery-main">
+
+                            <strong>
+                                LG-17421
+                            </strong>
+
+                            <span>
+                                Bangalore → Mumbai
+                            </span>
+
+                        </div>
+
+
+                        <div class="delivery-right">
+
+                            <span class="delivered">
+                                Delivered
+                            </span>
+
+                            <small>
+                                12 Aug
+                            </small>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- PROMO -->
+
+                <div class="promo-card">
+
+
+                    <div class="promo-content">
+
+                        <span>
+                            LUGGAGEGO PLUS
+                        </span>
+
+                        <h2>
+                            Travel more.
+                            <br>
+                            Worry less.
+                        </h2>
+
+                        <p>
+                            Get priority delivery,
+                            real-time alerts and
+                            exclusive discounts.
+                        </p>
+
+                        <button onclick="location.href='booking.html'">
+                            Explore Plus
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </button>
+
+                    </div>
+
+
+                    <div class="promo-bag">
+
+                        <i class="fa-solid fa-suitcase-rolling"></i>
+
+                    </div>
+
+
+                    <div class="promo-circle"></div>
+
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+    </main>
+
+
+</div>
+
+
+<script>
+
+
+/* =====================================
+   SIDEBAR
+===================================== */
+
+function toggleSidebar(){
+
+    document
+        .getElementById("sidebar")
+        .classList.toggle("show");
+
+}
+
+
+
+/* =====================================
+   USER NAME
+===================================== */
+
+const userData =
+    localStorage.getItem("loggedInUser");
+
+
+if(userData){
+
+    try{
+
+        const user =
+            JSON.parse(userData);
+
+        if(user.email){
+
+            const name =
+                user.email
+                .split("@")[0];
+
+            document
+                .getElementById("userName")
+                .textContent = name;
+
+            document
+                .getElementById("welcomeName")
+                .textContent = name;
+
+        }
+
+    }
+
+    catch(error){
+
+        console.log(error);
+
+    }
+
+}
+
+
+</script>
+
+<script src="js/dashboard.js"></script>
+
+
+</body>
+
+</html>

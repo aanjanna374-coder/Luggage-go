@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Staff Dashboard</title>
+
+<link rel="stylesheet"
+href="../../css/style.css">
+
+</head>
+
+<body data-page="driver-dashboard">
+
+<header class="navbar">
+
+<a class="brand"
+href="dashboard.html">
+🧳 Luggage<span>Go</span>
+</a>
+
+<nav>
+
+<a class="active"
+href="dashboard.html">
+Dashboard
+</a>
+
+<a href="assignments.html">
+Assignments
+</a>
+
+<a href="profile.html">
+Profile
+</a>
+
+</nav>
+
+<button onclick="logout()">
+Logout
+</button>
+
+</header>
+
+
+<main class="container page">
+
+<section class="staff-welcome">
+	<div>
+		<span class="staff-kicker" id="shiftDate">STAFF SHIFT</span>
+		<h1>Staff workspace</h1>
+		<p>Your assigned deliveries and route progress for today.</p>
+	</div>
+	<a href="assignments.html" class="btn primary">Open assignments</a>
+</section>
+
+
+<div class="stats">
+
+<div class="stat-card staff-stat">
+<span>📦</span>
+<h2>0</h2>
+<p>My assignments</p>
+</div>
+
+<div class="stat-card staff-stat">
+<span>📥</span>
+<h2>0</h2>
+<p>Picked Up</p>
+</div>
+
+<div class="stat-card staff-stat">
+<span>🚚</span>
+<h2>0</h2>
+<p>In Transit</p>
+</div>
+
+<div class="stat-card staff-stat">
+<span>✅</span>
+<h2>0</h2>
+<p>Delivered</p>
+</div>
+
+</div>
+
+
+<div class="staff-workspace">
+	<section class="panel staff-assignment">
+		<div class="staff-panel-heading">
+			<div>
+				<span class="staff-kicker">MY ROUTE</span>
+				<h2>Current assignment</h2>
+			</div>
+			<span id="shiftState" class="shift-state">READY</span>
+		</div>
+
+		<div id="assignmentEmpty" class="assignment-empty">
+			<div class="assignment-mark">GO</div>
+			<div>
+				<h3>No active route</h3>
+				<p id="assignmentEmptyText">New customer bookings will appear here automatically.</p>
+			</div>
+		</div>
+
+		<div id="assignmentDetails" class="assignment-details" hidden>
+			<div class="assignment-reference">
+				<div>
+					<span class="staff-kicker">TRACKING ID</span>
+					<strong id="staffBookingId">-</strong>
+				</div>
+				<span id="staffBookingStatus" class="badge badge-blue">Booked</span>
+			</div>
+			<div class="staff-route">
+				<div class="staff-stop">
+					<span class="route-point pickup-point"></span>
+					<div><small>PICKUP</small><strong id="staffPickup">-</strong></div>
+				</div>
+				<div class="staff-route-line"><span id="routeProgressBar"></span></div>
+				<div class="staff-stop">
+					<span class="route-point delivery-point"></span>
+					<div><small>DELIVERY</small><strong id="staffDestination">-</strong></div>
+				</div>
+			</div>
+			<div class="staff-load">
+				<span><small>BAGS</small><strong id="staffBags">-</strong></span>
+				<span><small>TOTAL WEIGHT</small><strong id="staffWeight">-</strong></span>
+				<a href="assignments.html" class="btn primary">Continue assignment</a>
+			</div>
+		</div>
+	</section>
+
+	<aside class="staff-side">
+		<section class="panel staff-shortcuts">
+			<span class="staff-kicker">MY WORK</span>
+			<a href="assignments.html">Assigned deliveries <span>→</span></a>
+		</section>
+	</aside>
+</div>
+
+<section class="staff-worklist">
+	<div class="section-heading">
+		<h2>Assigned deliveries</h2>
+		<p>Only deliveries assigned to your account appear here.</p>
+	</div>
+	<div id="assignedWorkList"></div>
+</section>
+
+</main>
+
+
+<script src="../../admin/driver/worker/support/css/js/app.js"></script>
+<script src="../../js/operations.js"></script>
+
+</body>
+</html>
